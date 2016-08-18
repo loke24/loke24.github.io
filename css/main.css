@@ -1,0 +1,675 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+section#navba .navbar-inner{
+	min-height:170px;
+	background-color:#09F;	
+	width:auto;
+}
+
+section#getup .getup-inner{
+	min-height:600px;
+	background-image:url(../img/pokemon/man1.jpg);
+	
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+section#getup .getup-inner .fnt{
+	font-size:90px;
+	font-weight:900;
+}
+section#getup .getup-inner h1{
+	margin:0 !important;
+	font-size:108px;
+	font-weight:900;
+}
+section#getup .getup-inner .g{
+	position:absolute;
+	top:204px;
+	left:128px;
+	
+}
+section#getup .getup-inner .a{
+	position:absolute;
+	top:308px;
+	left:128px;
+	
+}
+
+.quote{
+	
+	width:497px;
+	background-color:rgba(0, 0, 0, 0.333333);
+	/*opacity:0.7;*/
+	position:absolute;
+	top:435px;
+	left:128px;
+	font-size:19px;
+	font-weight:600;
+	text-align:center;
+	border-radius:7px;
+}
+.quote p{
+	margin:7px;
+	color:#FFF;
+}
+.but{
+	width:543px;
+	/*background-color:#003;*/
+	background:linear-gradient(to right, rgb(16, 218, 248) 0%, rgb(0, 133, 230) 100%);
+	position:absolute;
+	top:504px;
+	left:170px;
+	opacity:0.7;
+	border-radius:23px;
+	border:solid #FFF 2px;
+	
+}
+.but .but-inner p{
+	margin:7px 18px 7px 51px;
+	font-size:33px;
+	font-weight:700;
+	padding:0;
+	
+}
+.but-play{
+	background-image:url(../img/sprite.png);
+	min-height:97px;
+	background-size:445px;
+	display:inline-block;
+	background-color:transparent;
+	position:absolute;
+	top:-56px;
+	left:-95px;
+	width:102px;
+	margin:43px;
+	
+	content:"";
+	background-position:1px 1px;
+	background-repeat:no-repeat;
+	
+}
+
+.anim{
+	transition:all 2s;
+}
+	
+	
+.po-stand{
+	min-height:153px;
+	width:321px;
+	background:linear-gradient(rgba(255, 255, 255, 0.498039) 0%, rgba(255, 255, 255, 0.4) 100%);
+	
+	position:absolute;
+	top:440px;
+	right:96px;
+	border-radius:100px 100px 12px 12px;	
+}
+	
+.po-stand p{
+	position:relative;
+	top:54px;
+	font-size:28px;
+	font-weight:800;
+	color:#FFF ;
+	
+}
+.poke-head .poke-head-1 img{
+	height:180px;
+	width:auto;
+}
+.poke-head .poke-head-1{
+	position:absolute;
+	top:20px;
+	left:528px;
+	transform:scale(1,1);
+	transition:transform 0.4s;
+}
+.poke-head .poke-head-1:hover {
+	transform:scale(1.3,1.3);
+	transition:transform ease-in-out 0.4s;
+}
+	
+.poke-head-inner{
+	background-color:#666;
+}
+.poke-head-inner ul{
+	list-style-type:none;
+		
+	
+}
+.poke-head-inner .go-plus a:after{
+	background-position:0px -102px;
+
+	background-color:transparent;
+	position:absolute;
+	top:113px;
+	left:239px;
+}
+.poke-head-inner .Explore a:after{
+	background-position:-68.5px -102px;
+	background-color:transparent;
+
+	position:absolute;
+	top:67px;
+	left:345px;
+}
+.poke-head-inner a:after{
+	min-height:69px;
+	width:68px;
+	background-image:url(../img/sprite.png);
+	content:"";
+	background-size:471px;
+	background-repeat:no-repeat;
+}
+.poke-head-inner .Pokemon a:after{
+	
+	background-position:-137px -102px;
+	background-color:transparent;
+	position:absolute;
+	top:113px;
+	left:446px;
+}
+.poke-head-inner .team a:after{	
+	background-position:-205px -102px;
+	background-color:transparent;
+	position:absolute;
+	top:113px;
+	right:446px;
+}
+.poke-head-inner .gym a:after{
+	background-position:-273px -102px;
+	background-color:transparent;
+	position:absolute;
+	top:67px;
+	right:340px;
+}
+.poke-head-inner .purchase a:after{
+	
+	background-position:-341px -102px;
+	background-color:transparent;
+	position:absolute;
+	top:113px;
+	right:239px;
+}
+.poke-head-inner .go-plus:hover a:after{
+	background-position:0px -350px;
+	transform:scale(1.2,1.2);
+	transition:transform 0.3s;
+	
+}
+.poke-head-inner .Explore:hover a:after{
+	background-position:-68.5px -350px;
+	transform:scale(1.2,1.2);
+	transition:transform 0.3s;
+	
+}
+.poke-head-inner .Pokemon:hover a:after{
+	background-position:-137px -350px;
+	transform:scale(1.2,1.2);
+	transition:transform 0.3s;
+	
+}
+.poke-head-inner .team:hover a:after{
+	background-position:-205px -350px;
+	transform:scale(1.2,1.2);
+	transition:transform 0.3s;
+	
+}
+.poke-head-inner .gym:hover a:after{
+	background-position:-273px -350px;
+	transform:scale(1.2,1.2);
+	transition:transform 0.3s;
+	
+}
+.poke-head-inner .purchase:hover a:after{
+	background-position:-341px -350px;
+	transform:scale(1.2,1.2);
+	transition:transform 0.3s;
+	
+}
+.float-inner{
+	min-height:300px;
+	width:300px;
+	background-color:#C06;
+	position:absolute;
+	top:30px;
+	left:40px;
+	
+}
+
+	.new-div .new-div-inner{
+	min-height:300px;
+	width:400px;
+	background-color:#C00;
+}	 
+.new-div-inner li{
+	margin:5px;
+	display:inline-block;
+}
+
+.btn{
+	display:inline-block;
+	background-color:#0F3;
+	border-radius:25px;
+	
+	
+}
+.second{
+	background:url(../img/sec-back.jpg);
+	min-height:600px;
+	background-size:1366px 720px;
+
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.second .second-inner-in{
+	
+	background-image:url(../img/device.png);
+	min-height:404px;
+	background-repeat:no-repeat;
+	position:relative;
+	left:30px;
+	top:295px;
+	width:400px;
+	
+	
+	
+	
+}
+
+.second .second-inner .content{
+	min-height:335px;
+	width:688px;
+	background-color:rgba(0, 0, 0, 0.333333);
+	
+	font-size:18px;
+	border-radius:20px;
+	color:#FFF;	
+	position:relative;
+	
+	top:-187px;
+	left:630px;
+}
+.hed{
+	font-size:75px;
+	font-weight:500;
+	line-height:1;
+	
+}
+.ll{
+	
+	margin-bottom:90px;
+	padding-left:20px;
+	color:#FFF;
+}
+/*.ll:after{
+	min-height:2px;
+	height:3px;
+	width:688px;
+	background-color:#fff;	
+	position:relative;
+	
+}*/
+.mm{
+	font-size:21px;
+	color:#FFF;
+	margin-left:20px;
+	
+}
+
+	
+.third .third-inner{
+	background:url(../img/third-back.jpg);
+	min-height:600px;
+	background-repeat:no-repeat;
+	background-size:1366px 600px;
+	
+}
+.third-inner .con{
+	min-height:335px;
+	width:688px;
+	background-color:rgba(0, 0, 0, 0.333333);
+		
+	font-size:18px;
+	border-radius:20px;
+		
+	position:relative;
+	
+	top:147px;
+	left:0px;
+}
+.content p{
+	color:#fff;
+	opacity:1;
+}
+.final .final-inner{
+	min-height:400px;
+	background-color:#0e5eac;
+}
+button.b1{
+	position:relative;
+	top:76px;
+	width:212px;
+	left:322px;
+	height:50px;	
+	font-size:16px;
+	font-weight:600;
+	color:#fff;
+	background:linear-gradient(rgb(75, 208, 235) 0%, rgb(47, 173, 225) 100%);	
+}
+
+button.b2{
+	position:relative;
+	top:193px;
+	width:265px;
+	left:-80px;
+	height:50px;	
+	font-size:16px;
+	font-weight:600;
+	background-color:#CCC;
+	opacity:0.6;
+	
+}
+button.b3{
+	position:relative;
+	top:193px;
+	width:265px;
+	left:-32px;
+	height:50px;	
+	font-size:16px;
+	font-weight:600;
+	background-color:#CCC;
+	opacity:0.6;
+	
+}
+.pok-com{
+	
+	background-image:url(../img/sprite.png);
+	width:226px;
+	height:35px;
+	position:relative;
+	left:629px;
+	top:39px;
+	background-position:0px 201px;
+	background-size:446px;
+}
+.nit{
+	
+	background-image:url(../img/sprite.png);
+	width:74px;
+	height:132px;
+	position:relative;
+	left:929px;
+	top:-59px;
+	background-position:-355px -189px;
+	background-size:431px;
+	
+}
+.nsr{
+	
+	background-image:url(../img/sprite.png);
+	width:68px;
+	height:93px;
+	position:relative;
+	left:1102px;
+	top:-172px;
+	background-position:-162px 154px;
+	background-size:419px;
+}
+
+.pri a{
+	position:relative;
+	left:874px;
+	top:-104px;
+	font-size:16px;
+	margin-right:65px;
+}
+.note{
+	font-size:12px;
+	position:relative;
+	top:-45px;
+	
+}
+
+.nav-inner{
+	min-height:100px;
+}
+.pok-nav{
+	width:165px;
+	height:85px;
+	position:absolute;
+	top:1000px;
+	left:602px;
+	z-index:2;
+}
+.nav-top{
+	position:fixed;
+	top:0;
+		
+	
+}
+.line{
+	
+	min-height:2px;
+	width:1366px;
+	position:absolute;
+	top:1069px;
+	background-color:#FFF;
+}
+	
+.modal-inner{
+	min-height:265px;
+	width:600px;
+	background-color:#FFF;
+	opacity:0.7;
+	position:relative;
+	top:100px;
+	
+	
+	
+}
+ul .butto{
+	min-height:27px;
+	background-color:#0e5eac;
+	display:inline-block;
+	margin:10px;
+	text-transform:uppercase;
+	text-align:center;
+	padding:3px 26px 3px 5px;
+	color:#FFF;
+	border-radius:20px;
+	
+}
+ul{
+	padding:0px;
+}
+.dismiss{
+	position:relative;
+	right:-573px;
+	top:-289px;	
+	
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
